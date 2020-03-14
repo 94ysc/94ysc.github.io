@@ -1,4 +1,4 @@
-
+copy NAME  public/NAME 
 git add -A
 git commit -m ''
 git push
