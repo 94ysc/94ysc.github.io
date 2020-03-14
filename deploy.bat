@@ -1,4 +1,4 @@
-copy NAME  public/NAME 
+copy CNAME  public/CNAME 
 git add -A
 git commit -m ''
 git push
