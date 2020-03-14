@@ -1,0 +1,15 @@
+{
+  "name": "sheng_chao",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js && deploy.bat",
+    "deploy": "deploy.bat"
+  },
+  "devDependencies": {
+    "vuepress": "1.2.0",
+    "vuepress-theme-reco": "1.2.2"
+  },
+  "description": "讨好型人格+社交恐惧"
+}
