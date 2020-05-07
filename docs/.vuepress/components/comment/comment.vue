@@ -23,6 +23,7 @@ export default {
     body.appendChild(script);
     
     script.onload = () => {
+      md5s.onload =() =>{
       let id=md5(location.pathname);
       const commentConfig = {
         clientID: 'da1d502e0360e9f23939',
@@ -40,6 +41,7 @@ export default {
       };
       const gitalk = new Gitalk(commentConfig);
       gitalk.render('gitalk-container');
+      };
     };
   },
 };
