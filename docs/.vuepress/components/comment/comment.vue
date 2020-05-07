@@ -14,17 +14,16 @@ export default {
     linkGitalk.href = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css';
     linkGitalk.rel = 'stylesheet';
     document.body.appendChild(linkGitalk);
-    let body = document.querySelector('.gitalk-container');
-    let md5s=document.createElement('script');
+     let md5s=document.createElement('script');
     md5s.src='https://shengchao.dev/js/md5.min.js'
-    body.appendChild(md5s)
+    document.body.appendChild(md5s);
+    let body = document.querySelector('.gitalk-container');
     let script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js';
     body.appendChild(script);
     
     script.onload = () => {
       let id=md5(location.pathname);
-      console.log(id);
       const commentConfig = {
         clientID: 'da1d502e0360e9f23939',
         clientSecret: '812bf612059eec7bdce5253f1d1d56e27c4a4f39',
