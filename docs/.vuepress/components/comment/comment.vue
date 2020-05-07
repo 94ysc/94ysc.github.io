@@ -3,7 +3,6 @@
     <div id="gitalk-container"></div>
   </div>
 </template>
- <script src="/js/md5.min.js"></script>
 <script>
 export default {
   name: 'comment',

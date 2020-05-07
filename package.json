@@ -11,5 +11,8 @@
     "vuepress": "1.2.0",
     "vuepress-theme-reco": "1.2.2"
   },
-  "description": "讨好型人格+社交恐惧"
+  "description": "讨好型人格+社交恐惧",
+  "dependencies": {
+    "blueimp-md5": "^2.14.0"
+  }
 }
