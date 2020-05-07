@@ -3,7 +3,6 @@
     <div id="gitalk-container"></div>
   </div>
 </template>
-<script src='https://shengchao.dev/js/md5.min.js'></script>
 <script>
 export default {
   name: 'comment',
@@ -19,6 +18,9 @@ export default {
     let script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js';
     body.appendChild(script);
+    let md5=document.createElement('script');
+    md5.src='https://shengchao.dev/js/md5.min.js'
+    body.appendChild(md5)
     script.onload = () => {
       const commentConfig = {
         clientID: 'da1d502e0360e9f23939',
