@@ -24,7 +24,6 @@ export default {
     
     script.onload = () => {
       md5s.onload =() =>{
-      let id=md5(location.pathname);
       const commentConfig = {
         clientID: 'da1d502e0360e9f23939',
         clientSecret: '812bf612059eec7bdce5253f1d1d56e27c4a4f39',
@@ -35,7 +34,7 @@ export default {
         // id 用于当前页面的唯一标识，一般来讲 pathname 足够了，
        
         // 但是如果你的 pathname 超过 50 个字符，GitHub 将不会成功创建 issue，此情况可以考虑给每个页面生成 hash 值的方法.
-        id:id ,
+        id:md5(location.pathname) ,
         distractionFreeMode: false,
         language: 'zh-CN'
       };
