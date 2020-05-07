@@ -15,12 +15,13 @@ export default {
     linkGitalk.rel = 'stylesheet';
     document.body.appendChild(linkGitalk);
     let body = document.querySelector('.gitalk-container');
+    let md5s=document.createElement('script');
+    md5s.src='https://shengchao.dev/js/md5.min.js'
+    body.appendChild(md5s)
     let script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js';
     body.appendChild(script);
-    let md5=document.createElement('script');
-    md5.src='https://shengchao.dev/js/md5.min.js'
-    body.appendChild(md5)
+    
     script.onload = () => {
       let id=md5(location.pathname);
       console.log(id);
