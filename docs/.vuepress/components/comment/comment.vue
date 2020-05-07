@@ -3,6 +3,7 @@
     <div id="gitalk-container"></div>
   </div>
 </template>
+<script src='https://shengchao.dev/js/md5.min.js'></script>
 <script>
 export default {
   name: 'comment',
