@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "ONE PRICE/石原里美",
+  "title": "ONE PRICE",
   "description": "讨好型人格+社交恐惧",
   "dest": "public",
   "head": [
